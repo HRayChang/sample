@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="訂單管理系統互動展示原型"><title>訂單管理系統｜互動原型</title>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="訂單管理系統互動展示原型"><title>訂單管理系統｜舒爾企業有限公司</title>
 <style>
 /* ===== 原版樣式（保留） ===== */
 :root{--navy:#173653;--blue:#246b9d;--sky:#eaf3f9;--ink:#263746;--muted:#718292;--line:#dce5eb;--bg:#f4f7fa;--white:#fff;--green:#23856b;--orange:#c77a2c;--red:#bd4d4d;--shadow:0 8px 26px #1b3c5710}*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Inter,"Noto Sans TC","Microsoft JhengHei",sans-serif;color:var(--ink);font-size:14px}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}.app{display:flex;min-height:100vh}.sidebar{width:246px;background:var(--navy);color:#d8e5ef;padding:22px 14px;display:flex;flex-direction:column;flex-shrink:0}.brand{padding:4px 12px 24px;border-bottom:1px solid #ffffff22}.brand b{display:block;font-size:19px;color:white;letter-spacing:1px}.brand small{color:#a9c0d2;display:block;margin-top:6px}.navlabel{font-size:10px;letter-spacing:1.8px;color:#87a4ba;padding:20px 12px 8px}.nav{display:flex;align-items:center;gap:12px;width:100%;padding:11px 12px;margin:2px 0;background:transparent;color:#d8e5ef;border-radius:9px;text-align:left}.nav:hover,.nav.active{background:#ffffff18;color:#fff}.nav .ico{width:20px;text-align:center;font-size:16px}.nav .count{margin-left:auto;background:#ffffff20;border-radius:20px;padding:2px 7px;font-size:10px}.sidebottom{margin-top:auto;padding:15px 12px;color:#9bb3c6;font-size:11px;line-height:1.8}.main{flex:1;min-width:0}.topbar{height:72px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 32px;position:sticky;top:0;z-index:5}.crumb{color:var(--muted);font-size:12px}.crumb strong{color:var(--ink);font-size:14px;margin-left:8px}.topright{display:flex;align-items:center;gap:12px}.rolebox{display:flex;align-items:center;gap:8px;background:#f1f5f8;border:1px solid var(--line);padding:6px 10px;border-radius:9px}.rolebox label{font-size:11px;color:var(--muted)}select,input,textarea{border:1px solid #d5e0e8;border-radius:7px;padding:9px 10px;background:white;color:var(--ink);outline:none}select:focus,input:focus,textarea:focus{border-color:#5a9bc7;box-shadow:0 0 0 3px #5a9bc71b}.rolebox select{border:0;background:transparent;padding:3px;font-weight:600}.avatar{width:34px;height:34px;border-radius:50%;background:#dcebf5;color:var(--navy);display:grid;place-items:center;font-weight:700}.content{padding:30px 34px;max-width:1500px;margin:auto}.pagehead{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:24px;gap:16px}.eyebrow{font-size:10px;letter-spacing:2px;color:var(--blue);font-weight:700}.pagehead h1{font-size:25px;margin:5px 0 6px;color:#183650}.pagehead p{margin:0;color:var(--muted)}.btn{padding:9px 14px;border-radius:7px;font-weight:600;font-size:12px;display:inline-flex;align-items:center;gap:7px}.primary{background:var(--navy);color:white}.primary:hover{background:#245274}.secondary{background:white;border:1px solid var(--line);color:var(--ink)}.danger{background:#fff1f0;color:var(--red);border:1px solid #f1d2cf}.success{background:#eaf6f1;color:var(--green)}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-bottom:20px}.stat,.panel{background:white;border:1px solid var(--line);border-radius:11px;box-shadow:var(--shadow)}.stat{padding:17px 18px}.stat-top{display:flex;justify-content:space-between;color:var(--muted);font-size:12px}.stat-icon{width:31px;height:31px;border-radius:8px;background:var(--sky);display:grid;place-items:center;color:var(--blue)}.stat strong{font-size:26px;display:block;margin:10px 0 3px;color:#1b3c56}.stat small{color:var(--muted)}.grid2{display:grid;grid-template-columns:1.35fr 1fr;gap:17px}.panel{padding:19px;margin-bottom:17px}.panelhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;gap:10px}.panelhead h3{margin:0;font-size:15px;color:#1d3d57}.panelhead small{color:var(--muted)}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;white-space:nowrap}th{text-align:left;font-size:11px;color:#718494;font-weight:600;background:#f6f9fb;padding:11px 12px;border-bottom:1px solid var(--line)}td{padding:12px;border-bottom:1px solid #edf1f4;font-size:12px}tr:last-child td{border-bottom:0}tbody tr:hover{background:#fbfdfe}.tag{display:inline-block;padding:4px 8px;border-radius:20px;background:#edf3f7;color:#567184;font-size:10px}.tag.green{background:#e8f5ef;color:#26805e}.tag.orange{background:#fff3e6;color:#b8752e}.tag.red{background:#fff0ef;color:#b64f4b}.tag.blue{background:#eaf3fa;color:#2b6f9f}.muted{color:var(--muted)}.toolbar{display:flex;align-items:center;gap:9px;margin-bottom:14px;flex-wrap:wrap}.toolbar input{min-width:220px}.toolbar .spacer{flex:1}.empty{padding:35px;text-align:center;color:var(--muted)}.notice{padding:12px 14px;background:#fff8ed;border:1px solid #f3dfc4;border-radius:8px;color:#94632e;font-size:12px;line-height:1.7;margin-bottom:15px}.notice.blue{background:#eef6fb;border-color:#d6e7f2;color:#386987}.rowactions{display:flex;gap:6px}.mini{padding:5px 8px;border-radius:5px;background:#f0f5f8;color:#456477;font-size:11px}.mini:hover{background:#e1edf4}.progress{height:6px;background:#edf1f4;border-radius:10px;overflow:hidden}.progress span{display:block;height:100%;background:#4d93bd;border-radius:10px}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.field{display:flex;flex-direction:column;gap:6px;min-width:0}.field.full{grid-column:1/-1}.field label{font-size:11px;color:#667b8b;font-weight:600}.field input,.field select,.field textarea{width:100%}.field textarea{min-height:75px;resize:vertical}.modalback{position:fixed;inset:0;background:#10283d88;z-index:20;display:grid;place-items:center;padding:20px}.modal{background:white;border-radius:13px;width:min(720px,100%);max-height:90vh;overflow:auto;box-shadow:0 25px 80px #10283d55}.modalhead{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#fff;z-index:2}.modalhead h3{margin:0;color:var(--navy)}.modalbody{padding:22px}.modalfoot{padding:15px 22px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap;position:sticky;bottom:0;background:#fff;z-index:2}.close{background:transparent;font-size:22px;color:#8293a0}.timeline{border-left:2px solid #d9e7f0;margin-left:7px;padding-left:18px}.event{position:relative;margin:0 0 18px}.event:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:#4b8fb8;left:-24px;top:4px}.event b{font-size:12px}.event small{display:block;color:var(--muted);margin-top:4px}.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line);margin-bottom:16px;overflow:auto}.tab{background:transparent;padding:10px 13px;color:var(--muted);border-bottom:2px solid transparent;font-size:12px;white-space:nowrap}.tab.active{color:var(--blue);border-color:var(--blue);font-weight:700}.footer{padding:15px 34px;color:#9aabb8;font-size:10px;text-align:center}.hidden{display:none!important}.filelink{color:#2874a5;text-decoration:underline;cursor:pointer}.orderlines{width:100%;border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:10px}.orderlines h4{margin:0 0 10px}.pillrow{display:flex;gap:7px;flex-wrap:wrap}.pill{padding:7px 10px;background:#f0f5f8;border-radius:7px;font-size:11px;color:#527084}.authhint{font-size:11px;color:#8495a2;margin-top:2px;line-height:1.6}.autocomplete{position:relative;width:100%}.autocomplete input{width:100%}.autocomplete-menu{position:absolute;z-index:30;top:calc(100% + 4px);left:0;right:0;max-height:230px;overflow:auto;background:#fff;border:1px solid #b9cfdd;border-radius:8px;box-shadow:0 12px 28px #17365320}.autocomplete-option{display:flex;flex-direction:column;gap:3px;width:100%;padding:10px 12px;text-align:left;background:#fff;border-bottom:1px solid #eef2f5;color:var(--ink)}.autocomplete-option:last-child{border-bottom:0}.autocomplete-option:hover,.autocomplete-option.active{background:#edf6fb}.autocomplete-option strong{font-size:12px}.autocomplete-option small{font-size:10px;color:var(--muted)}.autocomplete-empty{padding:12px;color:var(--muted);font-size:11px}.readonly-note{font-size:10px;color:var(--muted)}
@@ -37,7 +37,7 @@ td.num,th.num{text-align:right}tr.total td{font-weight:700;background:#f6f9fb}tr
 @media(max-width:680px){.app{display:block}.sidebar{width:100%;padding:10px;position:relative}.brand{padding:8px 10px 12px}.navlabel,.sidebottom{display:none}.navgroup{display:flex;overflow:auto}.nav{white-space:nowrap;width:auto;padding:9px}.nav .phase{display:none}.topbar{padding:0 14px;height:60px}.content{padding:20px 13px}.pagehead{flex-direction:column}.cards{grid-template-columns:repeat(2,1fr);gap:9px}.stat{padding:13px}.stat strong{font-size:22px}.grid2{grid-template-columns:1fr}.formgrid,.formgrid.g4{grid-template-columns:1fr}.field.full{grid-column:auto}.span2{grid-column:auto}
  .modalback{padding:0}.modal,.modal.wide,.modal.small{border-radius:0;max-height:100vh;height:100%;width:100%}.crumb{display:none}.rolebox label{display:none}.rolebox{padding:4px 6px}.topright{gap:6px;margin-left:auto}.kv{grid-template-columns:1fr 1fr}.kv .w2{grid-column:1/-1}.toolbar input{min-width:0;flex:1}.legrow{grid-template-columns:1fr 1fr}.modalbody{padding:16px}.mobile-extra{display:flex!important}}
 .mobile-extra{display:none;gap:8px;flex-wrap:wrap;margin-bottom:14px}
-</style></head><body><div id="loadbar" class="loadbar"></div><div class="app"><aside class="sidebar"><div class="brand"><b>AFCO <span style="font-weight:300">| ORDER</span></b><small>訂單管理系統 · DEMO</small></div><div class="navlabel">WORKSPACE</div><div class="navgroup" id="nav"></div><div class="sidebottom">互動展示原型 v2.0<br>資料儲存於目前瀏覽器<br>GitHub Pages Static Demo<br><label class="switch" title="開啟後所有模擬 API 呼叫都會失敗，用來展示錯誤狀態"><input type="checkbox" id="simErr"> 模擬 API 錯誤</label><button id="resetBtn" type="button">↺ 重設展示資料</button></div></aside><main class="main"><header class="topbar"><div class="crumb">工作空間 <strong id="crumb">總覽儀表板</strong></div><div class="topright"><div class="rolebox"><label for="roleSelect">目前角色（展示切換）</label><select id="roleSelect" aria-label="切換使用角色"><option value="boss">老闆</option><option value="finance">財務</option><option value="manager">經理</option><option value="staff">專員</option><option value="assistant">業務助理</option></select></div><div class="avatar" id="avatar">老</div><button class="mini" id="logoutBtn" type="button">登出</button></div></header><section class="content" id="view"></section><div class="footer">AFCO ORDER MANAGEMENT · DEMONSTRATION ONLY · 資料僅儲存於本機瀏覽器</div></main></div><div id="modalroot"></div><div id="dialogroot"></div><div id="toastwrap" class="toastwrap" aria-live="polite"></div><div id="loginroot"></div>
+</style></head><body><div id="loadbar" class="loadbar"></div><div class="app"><aside class="sidebar"><div class="brand"><b id="brandName">舒爾企業</b><small id="brandSub">SURE THING CO., LTD. · 訂單管理系統</small></div><div class="navlabel">WORKSPACE</div><div class="navgroup" id="nav"></div><div class="sidebottom">互動展示原型 v2.0<br>資料儲存於目前瀏覽器<br>GitHub Pages Static Demo<br><label class="switch" title="開啟後所有模擬 API 呼叫都會失敗，用來展示錯誤狀態"><input type="checkbox" id="simErr"> 模擬 API 錯誤</label><button id="resetBtn" type="button">↺ 重設展示資料</button></div></aside><main class="main"><header class="topbar"><div class="crumb">工作空間 <strong id="crumb">總覽儀表板</strong></div><div class="topright"><div class="rolebox"><label for="roleSelect">目前角色（展示切換）</label><select id="roleSelect" aria-label="切換使用角色"><option value="boss">老闆</option><option value="finance">財務</option><option value="manager">經理</option><option value="staff">專員</option><option value="assistant">業務助理</option></select></div><div class="avatar" id="avatar">老</div><button class="mini" id="logoutBtn" type="button">登出</button></div></header><section class="content" id="view"></section><div class="footer">SURE THING CO., LTD. 舒爾企業有限公司 · ORDER MANAGEMENT DEMO · 資料僅儲存於本機瀏覽器</div></main></div><div id="modalroot"></div><div id="dialogroot"></div><div id="toastwrap" class="toastwrap" aria-live="polite"></div><div id="loginroot"></div>
 <script>
 'use strict';
 /* ==========================================================================
@@ -65,8 +65,11 @@ td.num,th.num{text-align:right}tr.total td{font-weight:700;background:#f6f9fb}tr
  * [A] MOCK 假資料與系統設定（集中定義）
  * ====================================================================== */
 const MOCK={
-  storageKey:'afcoOrderDemo_v2',            // localStorage 鍵（與 v1 不同，避免舊結構衝突）
-  sessionKey:'afcoOrderDemo_v2_session',
+  // 本公司（系統使用者所屬公司）。AFCO 等為客戶，列於 seed.customers
+  company:{name:'舒爾企業有限公司',en:'SURE THING CO., LTD.',short:'舒爾企業'},
+  storageKey:'sureOrderDemo_v3',            // localStorage 鍵（與 v1 不同，避免舊結構衝突）
+  sessionKey:'sureOrderDemo_v3_session',
+  seedVersion:'2026-11-26b',               // 假資料版本：修改 seed 時請一併更新，瀏覽器中的舊展示資料會自動換成新版
   apiDelay:[250,650],                       // 模擬 API 延遲（毫秒）
   demoPassword:'demo1234',                  // 假設：展示環境所有帳號同一密碼
   login:{maxFail:5,lockSeconds:60},         // 假設：§7.2「登入有失敗次數限制」→ 連錯 5 次鎖 60 秒
@@ -107,7 +110,7 @@ const MOCK={
       {id:'C3',name:'Nordic Motorsport AB',ship:'Industrivägen 8, 431 37 Mölndal, Sweden',bill:'Box 221, 431 23 Mölndal, Sweden',phone:'+46 31 555 0190',fax:'+46 31 555 0191',email:'order@nordicms-demo.se',contact:'Erik Lund',contactPhone:'+46 70 555 0123',active:true}
     ],
     suppliers:[
-      {id:'S1',name:'SURE THING CO LTD',type:'工廠',contact:'John Lin',email:'SURE.THING@MSA.HINET.NET',phone:'02-2555-0101',active:true},
+      {id:'S1',name:'永記精密工業有限公司',type:'工廠',contact:'林永記',email:'sales@yongji-demo.com.tw',phone:'02-2555-0101',active:true},
       {id:'S2',name:'宏昌精密工業股份有限公司',type:'工廠',contact:'陳經理',email:'sales@hongchang-demo.com.tw',phone:'07-555-0188',active:true},
       {id:'S3',name:'DHL Express',type:'貨運',contact:'客服中心',email:'tw.cs@dhl-demo.com',phone:'0800-055-000',active:true},
       {id:'S4',name:'環球通運有限公司',type:'貨運',contact:'林小姐',email:'ops@globalfwd-demo.com.tw',phone:'02-2555-0177',active:true}
@@ -139,57 +142,57 @@ const MOCK={
       {id:'OP4',name:'ZINC PLATED',active:true},{id:'OP5',name:'無處理',active:true},{id:'OP6',name:'HARD ANODIZE',active:false}
     ],
     users:[
-      {id:'U1',name:'王老闆',role:'boss',email:'boss@afco-demo.local',active:true},
-      {id:'U2',name:'李財務',role:'finance',email:'finance@afco-demo.local',active:true},
-      {id:'U3',name:'張經理',role:'manager',email:'manager@afco-demo.local',active:true},
-      {id:'U4',name:'陳專員',role:'staff',email:'staff@afco-demo.local',active:true},
-      {id:'U5',name:'林助理',role:'assistant',email:'assistant@afco-demo.local',active:true}
+      {id:'U1',name:'林老闆',role:'boss',email:'boss@surething-demo.local',active:true},
+      {id:'U2',name:'李財務',role:'finance',email:'finance@surething-demo.local',active:true},
+      {id:'U3',name:'張經理',role:'manager',email:'manager@surething-demo.local',active:true},
+      {id:'U4',name:'陳專員',role:'staff',email:'staff@surething-demo.local',active:true},
+      {id:'U5',name:'黃助理',role:'assistant',email:'assistant@surething-demo.local',active:true}
     ],
     // 訂單：status 由 deriveStatus() 依作業自動計算（§4.4.2）
     orders:[
       {id:'SO-20261101',date:'2026-11-01',customerId:'C1',customer:'AFCO Performance Group, LLC.',contact:'Adam Waters',customerPO:'AFCO-PO-80211',ship:'977 HYROCK BLVD, BOONVILLE, IN 47601, USA',bill:'PO BOX 548, BOONVILLE, IN 47601, USA',currency:'USD',hts:'8708.80',delivery:'2026-12-15',
         attachments:[{id:'F-O1',name:'AFCO-PO-80211_fax.pdf',size:182000,mock:'po',at:'2026/11/1 09:35',by:'陳專員'}],confirmed:true,confirmedBy:'陳專員（專員）',confirmedAt:'2026/11/1 10:20:00',
-        lines:[{id:'L1',supplierId:'S1',supplier:'SURE THING CO LTD',productId:'P1',product:'A550010117X',version:'A',companyPart:'ST-550-117X',description:'T2 SHOCK BODY 7” CLEAR ANODIZE',drawingId:'D1',drawing:'A5500100-X_REV-H.pdf',qty:1000,unit:'EA',handling:'CLEAR ANODIZE',price:13.19,listPrice:13.19,listCurrency:'USD',cost:310,costCurrency:'TWD',prod:{status:'生產完成',orderDate:'2026-11-01',factoryPO:'ST-PO-261101',expectDone:'2026-11-06',doneDate:'2026-11-06'}}],
+        lines:[{id:'L1',supplierId:'S1',supplier:'永記精密工業有限公司',productId:'P1',product:'A550010117X',version:'A',companyPart:'ST-550-117X',description:'T2 SHOCK BODY 7” CLEAR ANODIZE',drawingId:'D1',drawing:'A5500100-X_REV-H.pdf',qty:1000,unit:'EA',handling:'CLEAR ANODIZE',price:13.19,listPrice:13.19,listCurrency:'USD',cost:310,costCurrency:'TWD',prod:{status:'生產完成',orderDate:'2026-11-01',factoryPO:'YJ-PO-261101',expectDone:'2026-11-06',doneDate:'2026-11-06'}}],
         history:[{at:'2026/11/1 09:40:00',by:'陳專員（專員）',from:'—',to:'草稿',note:'建立訂單'},{at:'2026/11/1 10:20:00',by:'陳專員（專員）',from:'草稿',to:'待下單給工廠',note:'確認訂單'},{at:'2026/11/1 14:02:00',by:'陳專員（專員）',from:'待下單給工廠',to:'生產中',note:'確認已下單給工廠'},{at:'2026/11/12 16:30:00',by:'張經理（經理）',from:'待出貨',to:'部分出貨',note:'出貨批次 SH-001'}]},
       {id:'SO-20261003',date:'2026-10-03',customerId:'C2',customer:'Summit Racing Supply Inc.',contact:'Mike Chen',customerPO:'SRS-55120',ship:'1200 Industrial Pkwy, Akron, OH 44310, USA',bill:'1200 Industrial Pkwy, Akron, OH 44310, USA',currency:'USD',hts:'8708.80',delivery:'2026-10-25',
-        attachments:[{id:'F-O2',name:'SRS-55120.xlsx',size:48200,mock:'xlsx',at:'2026/10/3 11:02',by:'林助理'}],confirmed:true,confirmedBy:'林助理（業務助理）',confirmedAt:'2026/10/3 11:30:00',
-        lines:[{id:'L2',supplierId:'S1',supplier:'SURE THING CO LTD',productId:'P4',product:'C88-115',version:'A',companyPart:'ST-88115',description:'BUMP STOP SPACER 1/2"',drawingId:'D6',drawing:'C88-115.pdf',qty:2000,unit:'EA',handling:'無處理',price:0.85,listPrice:0.85,listCurrency:'USD',cost:22,costCurrency:'TWD',prod:{status:'生產完成',orderDate:'2026-10-04',factoryPO:'ST-PO-261004',expectDone:'2026-10-12',doneDate:'2026-10-12'}}],
+        attachments:[{id:'F-O2',name:'SRS-55120.xlsx',size:48200,mock:'xlsx',at:'2026/10/3 11:02',by:'黃助理'}],confirmed:true,confirmedBy:'黃助理（業務助理）',confirmedAt:'2026/10/3 11:30:00',
+        lines:[{id:'L2',supplierId:'S1',supplier:'永記精密工業有限公司',productId:'P4',product:'C88-115',version:'A',companyPart:'ST-88115',description:'BUMP STOP SPACER 1/2"',drawingId:'D6',drawing:'C88-115.pdf',qty:2000,unit:'EA',handling:'無處理',price:0.85,listPrice:0.85,listCurrency:'USD',cost:22,costCurrency:'TWD',prod:{status:'生產完成',orderDate:'2026-10-04',factoryPO:'YJ-PO-261004',expectDone:'2026-10-12',doneDate:'2026-10-12'}}],
         history:[{at:'2026/10/20 17:10:00',by:'張經理（經理）',from:'待出貨',to:'已全部出貨',note:'出貨批次 SH-004'}]},
       {id:'SO-20261110',date:'2026-11-10',customerId:'C3',customer:'Nordic Motorsport AB',contact:'Erik Lund',customerPO:'NMS-PO-2026-097',ship:'Industrivägen 8, 431 37 Mölndal, Sweden',bill:'Box 221, 431 23 Mölndal, Sweden',currency:'EUR',hts:'8708.99',delivery:'2026-12-20',
         attachments:[{id:'F-O3',name:'NMS-PO-2026-097.eml',size:35100,mock:'eml',at:'2026/11/10 08:50',by:'陳專員'}],confirmed:true,confirmedBy:'陳專員（專員）',confirmedAt:'2026/11/10 09:30:00',
         lines:[{id:'L3',supplierId:'S2',supplier:'宏昌精密工業股份有限公司',productId:'P3',product:'B210-4402',version:'A',companyPart:'HC-4402',description:'LOWER CONTROL ARM BRACKET, ZINC PLATED',drawingId:'D5',drawing:'B210-4402_R2.jpg',qty:100,unit:'EA',handling:'ZINC PLATED',price:44.80,listPrice:48.50,listCurrency:'USD',cost:1350,costCurrency:'TWD',prod:{status:'生產完成',orderDate:'2026-11-10',factoryPO:'HC-261110',expectDone:'2026-11-20',doneDate:'2026-11-20'}}],
         history:[{at:'2026/11/22 15:10:00',by:'張經理（經理）',from:'待檢驗',to:'檢驗不合格／待重做',note:'第 1 輪檢驗不合格'}]},
       {id:'SO-20261115',date:'2026-11-15',customerId:'C2',customer:'Summit Racing Supply Inc.',contact:'Mike Chen',customerPO:'SRS-55311',ship:'1200 Industrial Pkwy, Akron, OH 44310, USA',bill:'1200 Industrial Pkwy, Akron, OH 44310, USA',currency:'USD',hts:'8708.80',delivery:'2026-12-31',
-        attachments:[{id:'F-O4',name:'SRS-55311.pdf',size:120400,mock:'po',at:'2026/11/15 10:11',by:'林助理'}],confirmed:true,confirmedBy:'林助理（業務助理）',confirmedAt:'2026/11/15 10:40:00',
+        attachments:[{id:'F-O4',name:'SRS-55311.pdf',size:120400,mock:'po',at:'2026/11/15 10:11',by:'黃助理'}],confirmed:true,confirmedBy:'黃助理（業務助理）',confirmedAt:'2026/11/15 10:40:00',
         lines:[
           {id:'L4',supplierId:'S2',supplier:'宏昌精密工業股份有限公司',productId:'P3',product:'B210-4402',version:'A',companyPart:'HC-4402',description:'LOWER CONTROL ARM BRACKET, ZINC PLATED',drawingId:'D5',drawing:'B210-4402_R2.jpg',qty:200,unit:'EA',handling:'ZINC PLATED',price:48.50,listPrice:48.50,listCurrency:'USD',cost:1380,costCurrency:'TWD',prod:{status:'生產中',orderDate:'2026-11-16',factoryPO:'HC-261116',expectDone:'2026-12-10'}},
-          {id:'L5',supplierId:'S1',supplier:'SURE THING CO LTD',productId:'P4',product:'C88-115',version:'A',companyPart:'ST-88115',description:'BUMP STOP SPACER 1/2"',drawingId:'D6',drawing:'C88-115.pdf',qty:5000,unit:'EA',handling:'無處理',price:0.85,listPrice:0.85,listCurrency:'USD',cost:22,costCurrency:'TWD',prod:{status:'生產完成',orderDate:'2026-11-16',factoryPO:'ST-PO-261116',expectDone:'2026-11-24',doneDate:'2026-11-24'}}],
+          {id:'L5',supplierId:'S1',supplier:'永記精密工業有限公司',productId:'P4',product:'C88-115',version:'A',companyPart:'ST-88115',description:'BUMP STOP SPACER 1/2"',drawingId:'D6',drawing:'C88-115.pdf',qty:5000,unit:'EA',handling:'無處理',price:0.85,listPrice:0.85,listCurrency:'USD',cost:22,costCurrency:'TWD',prod:{status:'生產完成',orderDate:'2026-11-16',factoryPO:'YJ-PO-261116',expectDone:'2026-11-24',doneDate:'2026-11-24'}}],
         history:[]},
       {id:'SO-20261120',date:'2026-11-20',customerId:'C1',customer:'AFCO Performance Group, LLC.',contact:'Adam Waters',customerPO:'AFCO-PO-80386',ship:'977 HYROCK BLVD, BOONVILLE, IN 47601, USA',bill:'PO BOX 548, BOONVILLE, IN 47601, USA',currency:'USD',hts:'8708.80',delivery:'2027-07-02',
         attachments:[{id:'F-O5',name:'order-sample.jpg',size:256000,mock:'po',at:'2026/11/20 09:12',by:'陳專員'}],confirmed:true,confirmedBy:'陳專員（專員）',confirmedAt:'2026/11/20 09:45:00',
-        lines:[{id:'L6',supplierId:'S1',supplier:'SURE THING CO LTD',productId:'P1',product:'A550010117X',version:'A',companyPart:'ST-550-117X',description:'T2 SHOCK BODY 7” CLEAR ANODIZE',drawingId:'D1',drawing:'A5500100-X_REV-H.pdf',qty:300,unit:'EA',handling:'CLEAR ANODIZE',price:13.19,listPrice:13.19,listCurrency:'USD',cost:310,costCurrency:'TWD',prod:{status:'未下單'}}],
+        lines:[{id:'L6',supplierId:'S1',supplier:'永記精密工業有限公司',productId:'P1',product:'A550010117X',version:'A',companyPart:'ST-550-117X',description:'T2 SHOCK BODY 7” CLEAR ANODIZE',drawingId:'D1',drawing:'A5500100-X_REV-H.pdf',qty:300,unit:'EA',handling:'CLEAR ANODIZE',price:13.19,listPrice:13.19,listCurrency:'USD',cost:310,costCurrency:'TWD',prod:{status:'未下單'}}],
         history:[]},
       {id:'SO-20261124',date:'2026-11-24',customerId:'C3',customer:'Nordic Motorsport AB',contact:'Erik Lund',customerPO:'NMS-PO-2026-118',ship:'Industrivägen 8, 431 37 Mölndal, Sweden',bill:'Box 221, 431 23 Mölndal, Sweden',currency:'USD',hts:'',delivery:'',
         attachments:[],confirmed:false,
-        lines:[{id:'L7',supplierId:'S1',supplier:'SURE THING CO LTD',productId:'P2',product:'A550010117X',version:'B',companyPart:'ST-550-117XB',description:'T2 SHOCK BODY 7” CLEAR ANODIZE REV-B（加長螺紋）',drawingId:'D3',drawing:'A5500100-X_REV-J.pdf',qty:500,unit:'EA',handling:'CLEAR ANODIZE',price:13.90,listPrice:13.90,listCurrency:'USD',cost:330,costCurrency:'TWD',prod:{status:'未下單'}}],
+        lines:[{id:'L7',supplierId:'S1',supplier:'永記精密工業有限公司',productId:'P2',product:'A550010117X',version:'B',companyPart:'ST-550-117XB',description:'T2 SHOCK BODY 7” CLEAR ANODIZE REV-B（加長螺紋）',drawingId:'D3',drawing:'A5500100-X_REV-J.pdf',qty:500,unit:'EA',handling:'CLEAR ANODIZE',price:13.90,listPrice:13.90,listCurrency:'USD',cost:330,costCurrency:'TWD',prod:{status:'未下單'}}],
         history:[{at:'2026/11/24 16:05:00',by:'陳專員（專員）',from:'—',to:'草稿',note:'建立訂單'}]}
     ],
     // §4.5 出貨批次：批次明細、出口報單、匯率、多段運送
     shipments:[
       {id:'SH-001',orderId:'SO-20261101',lines:[{lineId:'L1',qty:300}],exportNo:'AA/15/1112/0001',exportDate:'2026-11-12',rate:32.15,planned:'2026-11-12',actual:'2026-11-12',eta:'2026-11-16',received:'2026-11-16',status:'已出貨',track:'已送達',reportEmailed:true,isReplacement:false,
-        legs:[{from:'SURE THING（台北）',to:'AFCO Boonville',method:'空運',freight:180,currency:'USD',payer:'公司自付',payeeId:'S3',trackNo:'DHL-1234567890'}]},
+        legs:[{from:'永記精密（台北）',to:'AFCO Boonville',method:'空運',freight:180,currency:'USD',payer:'公司自付',payeeId:'S3',trackNo:'DHL-1234567890'}]},
       {id:'SH-002',orderId:'SO-20261101',lines:[{lineId:'L1',qty:400}],exportNo:'AA/15/1120/0007',exportDate:'2026-11-20',rate:32.40,planned:'2026-11-20',actual:'2026-11-20',eta:'2026-11-29',received:'',status:'已出貨',track:'運送中',reportEmailed:true,isReplacement:false,
-        legs:[{from:'SURE THING（新北）',to:'環球通運 桃園倉',method:'陸運',freight:3500,currency:'TWD',payer:'供應商墊付',payeeId:'S1',trackNo:'ST-TRK-0420'},{from:'桃園機場',to:'AFCO Boonville',method:'空運',freight:620,currency:'USD',payer:'公司自付',payeeId:'S4',trackNo:'GF-AIR-88213'}]},
+        legs:[{from:'永記精密（新北）',to:'環球通運 桃園倉',method:'陸運',freight:3500,currency:'TWD',payer:'供應商墊付',payeeId:'S1',trackNo:'YJ-TRK-0420'},{from:'桃園機場',to:'AFCO Boonville',method:'空運',freight:620,currency:'USD',payer:'公司自付',payeeId:'S4',trackNo:'GF-AIR-88213'}]},
       {id:'SH-003',orderId:'SO-20261101',lines:[{lineId:'L1',qty:300}],exportNo:'',exportDate:'',rate:32.40,planned:'2026-12-03',actual:'',eta:'2026-12-08',received:'',status:'待出貨',track:'未出貨',reportEmailed:false,isReplacement:false,
-        legs:[{from:'SURE THING（台北）',to:'AFCO Boonville',method:'空運',freight:'',currency:'USD',payer:'公司自付',payeeId:'S3',trackNo:''}]},
+        legs:[{from:'永記精密（台北）',to:'AFCO Boonville',method:'空運',freight:'',currency:'USD',payer:'公司自付',payeeId:'S3',trackNo:''}]},
       {id:'SH-004',orderId:'SO-20261003',lines:[{lineId:'L2',qty:2000}],exportNo:'AA/15/1020/0003',exportDate:'2026-10-20',rate:32.05,planned:'2026-10-20',actual:'2026-10-20',eta:'2026-10-28',received:'2026-10-28',status:'已出貨',track:'已送達',reportEmailed:true,isReplacement:false,
-        legs:[{from:'SURE THING（台北）',to:'Summit Akron',method:'空運',freight:95,currency:'USD',payer:'公司自付',payeeId:'S3',trackNo:'DHL-9988776655'}]}
+        legs:[{from:'永記精密（台北）',to:'Summit Akron',method:'空運',freight:95,currency:'USD',payer:'公司自付',payeeId:'S3',trackNo:'DHL-9988776655'}]}
     ],
     // §4.6 檢驗紀錄（多輪）
     inspection:[
-      {id:'I1',orderId:'SO-20261101',lineId:'L1',batchRef:'',round:1,method:'小零件：工廠寄樣至台北',place:'台北',inspector:'陳專員',date:'2026-11-07',result:'不合格',reason:'陽極處理色差、部分螺紋毛邊',notifyDate:'2026-11-07',redoDate:'2026-11-09',reportChecked:true,images:[],reports:[{id:'F-I1',name:'ST-QC-1107.pdf',size:98000,mock:'report'}],status:'待工廠重做'},
-      {id:'I2',orderId:'SO-20261101',lineId:'L1',batchRef:'',round:2,method:'小零件：工廠寄樣至台北',place:'台北',inspector:'陳專員',date:'2026-11-09',result:'合格',reason:'',notifyDate:'',redoDate:'',reportChecked:true,images:[],reports:[{id:'F-I2',name:'ST-QC-1109.pdf',size:101000,mock:'report'}],status:'合格'},
-      {id:'I3',orderId:'SO-20261003',lineId:'L2',batchRef:'',round:1,method:'小零件：工廠寄樣至台北',place:'台北',inspector:'林助理',date:'2026-10-14',result:'合格',reason:'',notifyDate:'',redoDate:'',reportChecked:true,images:[],reports:[],status:'合格'},
+      {id:'I1',orderId:'SO-20261101',lineId:'L1',batchRef:'',round:1,method:'小零件：工廠寄樣至台北',place:'台北',inspector:'陳專員',date:'2026-11-07',result:'不合格',reason:'陽極處理色差、部分螺紋毛邊',notifyDate:'2026-11-07',redoDate:'2026-11-09',reportChecked:true,images:[],reports:[{id:'F-I1',name:'YJ-QC-1107.pdf',size:98000,mock:'report'}],status:'待工廠重做'},
+      {id:'I2',orderId:'SO-20261101',lineId:'L1',batchRef:'',round:2,method:'小零件：工廠寄樣至台北',place:'台北',inspector:'陳專員',date:'2026-11-09',result:'合格',reason:'',notifyDate:'',redoDate:'',reportChecked:true,images:[],reports:[{id:'F-I2',name:'YJ-QC-1109.pdf',size:101000,mock:'report'}],status:'合格'},
+      {id:'I3',orderId:'SO-20261003',lineId:'L2',batchRef:'',round:1,method:'小零件：工廠寄樣至台北',place:'台北',inspector:'黃助理',date:'2026-10-14',result:'合格',reason:'',notifyDate:'',redoDate:'',reportChecked:true,images:[],reports:[],status:'合格'},
       {id:'I4',orderId:'SO-20261110',lineId:'L3',batchRef:'',round:1,method:'大型件：至南部工廠抽樣',place:'南部工廠',inspector:'張經理',date:'2026-11-22',result:'不合格',reason:'孔位偏移 0.3mm，超出公差 ±0.1mm',notifyDate:'2026-11-22',redoDate:'2026-12-02',reportChecked:false,images:[{id:'F-I4',name:'HC-4402_hole.jpg',size:640000,mock:'photo'}],reports:[],status:'待工廠重做'}
     ],
     // §4.7 客訴單
@@ -200,7 +203,7 @@ const MOCK={
     accounting:[
       {id:'A1',type:'預付款（訂金）',party:'宏昌精密工業股份有限公司',supplierId:'S2',orderId:'SO-20261115',amount:50000,currency:'TWD',rate:1,month:'2026-11',status:'待沖銷',note:'訂單 SO-20261115 訂金 30%',source:'手動'},
       {id:'A2',type:'應收',party:'Summit Racing Supply Inc.',supplierId:'',orderId:'SO-20261003',amount:1700,currency:'USD',rate:32.05,month:'2026-10',status:'已收款',note:'批次 SH-004',source:'月結 2026-10',key:'SH-004'},
-      {id:'A3',type:'應付',party:'SURE THING CO LTD',supplierId:'S1',orderId:'',amount:44000,currency:'TWD',rate:1,month:'2026-10',status:'已付款',note:'貨款 44,000.00＋運費 0.00－折讓 0.00－訂金 0.00',source:'月結 2026-10',key:'SURE THING CO LTD'},
+      {id:'A3',type:'應付',party:'永記精密工業有限公司',supplierId:'S1',orderId:'',amount:44000,currency:'TWD',rate:1,month:'2026-10',status:'已付款',note:'貨款 44,000.00＋運費 0.00－折讓 0.00－訂金 0.00',source:'月結 2026-10',key:'永記精密工業有限公司'},
       {id:'A4',type:'應付',party:'DHL Express',supplierId:'S3',orderId:'',amount:3044.75,currency:'TWD',rate:1,month:'2026-10',status:'已付款',note:'貨款 0.00＋運費 3,044.75－折讓 0.00－訂金 0.00',source:'月結 2026-10',key:'DHL Express'}
     ],
     settlements:[{month:'2026-10',at:'2026/11/3 09:10:00',by:'李財務（財務）',arTwd:54485,apTwd:47044.75,batches:['SH-004']}],
@@ -242,6 +245,7 @@ const roles=MOCK.roles;
 /* ========================================================================
  * [C] 狀態、儲存與權限（§3）
  * ====================================================================== */
+let seedReplaced=false;
 let db=loadDB();
 const ui={page:'dashboard',search:'',filter:{},simulateError:false,loadError:false,acctTab:'settle',acctMonth:'',detailTab:'lines'};
 const sessionFiles=new Map(); // 本次瀏覽選取的實體檔案（objectURL），重新整理後失效
@@ -250,7 +254,7 @@ let sessionUserId=(()=>{try{return localStorage.getItem(MOCK.sessionKey)}catch(e
 function loadDB(){
   let d=null;
   try{const raw=localStorage.getItem(MOCK.storageKey);if(raw)d=JSON.parse(raw)}catch(e){d=null}
-  if(!d||!Array.isArray(d.orders))d=clone(MOCK.seed);
+  if(!d||!Array.isArray(d.orders)||d._seedVersion!==MOCK.seedVersion){if(d)seedReplaced=true;d=clone(MOCK.seed);d._seedVersion=MOCK.seedVersion}
   Object.keys(MOCK.seed).forEach(k=>{if(d[k]===undefined)d[k]=clone(MOCK.seed[k])});
   return d;
 }
@@ -453,7 +457,7 @@ function previewFile(f,ctx={}){
 function mockPreview(f,ext,ctx){
   const note=`<p class="authhint">※ 模擬預覽：展示資料沒有實體檔案；正式版由伺服器轉檔後顯示原始內容（${esc(ext.toUpperCase())}）。本次瀏覽新選取的 PDF／JPG／PNG 會直接顯示實際檔案。</p>`;
   const o=ctx.order;
-  if(o&&(f.mock==='po'||['pdf','jpg','jpeg','png','tif','tiff'].includes(ext)))return `<div class="preview-doc"><h2>PURCHASE ORDER</h2><div class="muted">FAX · ${esc(o.customer)}</div><p>PO#: <b>${esc(o.customerPO)}</b>　Date: ${esc(o.date)}　Ship to: ${esc(o.ship)}</p>${table(['Part No.','Description','Qty','Unit Price'],o.lines.map(l=>`<tr><td>${esc(l.product)}</td><td>${esc(l.description)}</td><td>${fmt(l.qty,0)} ${esc(l.unit)}</td><td>${fmt(l.price)} ${esc(o.currency)}</td></tr>`).join(''))}<p>Required delivery: ${esc(o.delivery||'—')}　Signature: ________</p></div>${note}`;
+  if(o&&(f.mock==='po'||['pdf','jpg','jpeg','png','tif','tiff'].includes(ext)))return `<div class="preview-doc"><h2>PURCHASE ORDER</h2><div class="muted">FAX · From: ${esc(o.customer)}　To: ${esc(MOCK.company.en)}（${esc(MOCK.company.name)}）</div><p>PO#: <b>${esc(o.customerPO)}</b>　Date: ${esc(o.date)}　Ship to: ${esc(o.ship)}</p>${table(['Part No.','Description','Qty','Unit Price'],o.lines.map(l=>`<tr><td>${esc(l.product)}</td><td>${esc(l.description)}</td><td>${fmt(l.qty,0)} ${esc(l.unit)}</td><td>${fmt(l.price)} ${esc(o.currency)}</td></tr>`).join(''))}<p>Required delivery: ${esc(o.delivery||'—')}　Signature: ________</p></div>${note}`;
   if(['xls','xlsx'].includes(ext))return `<div class="preview-doc">${table(['A','B','C','D'],(o?o.lines:[{product:'—',description:'—',qty:0,price:0}]).map(l=>`<tr><td>${esc(l.product)}</td><td>${esc(l.description)}</td><td>${l.qty}</td><td>${l.price}</td></tr>`).join(''))}</div>${note}`;
   if(['eml','msg'].includes(ext))return `<div class="preview-doc"><p><b>From:</b> ${esc(o?.contact||'customer')} &lt;${esc(db.customers.find(c=>c.id===o?.customerId)?.email||'—')}&gt;<br><b>Subject:</b> New PO ${esc(o?.customerPO||'')}<br><b>Date:</b> ${esc(o?.date||'')}</p><hr><p>Dear team,<br>Please find our new purchase order below. Kindly confirm delivery date.<br><br>Best regards,<br>${esc(o?.contact||'')}</p></div>${note}`;
   if(f.mock==='drawing'||f.mock==='photo'||['jpg','jpeg','png','pdf'].includes(ext))return `<img src="${partSVG(f.name,'DRAWING PREVIEW (MOCK)')}" alt="" style="width:100%;max-height:60vh;object-fit:contain;border:1px solid var(--line);border-radius:8px">${note}`;
@@ -497,7 +501,7 @@ const configs={
   products:{label:'產品',prefix:'P',perm:'products',desc:'管理產品規格、版本與實體圖；圖面、價格歷史為一對多（§4.3）。',title:r=>`${r.customerPart} / ${r.version}`,uniqueField:'version',
     notice:'<div class="notice blue">產品唯一識別為「客戶料號＋版本」，<b>版本號一改即視為新產品</b>。同一產品僅圖面不同（規格相同）時，不新增產品，請到「圖面管理」新增圖面。點選「圖面與價格」可查看該產品的所有圖面及歷史價格。</div>',
     // 假設：§4.3「客戶產品名稱、公司內部產品名稱、Part Number」拆為：客戶產品編號（Part Number）、客戶產品名稱、公司內部（工廠）產品編號
-    fields:[{k:'customerPart',l:'客戶產品編號（Part Number）',req:true},{k:'version',l:'版本',req:true,hint:'版本變更請新增一筆產品，勿直接修改'},{k:'name',l:'客戶產品名稱'},{k:'companyPart',l:'公司內部（工廠）產品編號'},{k:'description',l:'Description',t:'textarea',full:true},{k:'material',l:'材質'},{k:'supplierId',l:'預設供應商',t:'ref',ref:'suppliers'},{k:'image',l:'實體圖（產品圖片）',t:'file',kind:'image',full:true},activeField],
+    fields:[{k:'customerPart',l:'客戶產品編號（Part Number）',req:true},{k:'version',l:'版本',req:true,hint:'版本變更請新增一筆產品，勿直接修改'},{k:'name',l:'客戶產品名稱'},{k:'companyPart',l:'本公司（舒爾）產品編號'},{k:'description',l:'Description',t:'textarea',full:true},{k:'material',l:'材質'},{k:'supplierId',l:'預設供應商',t:'ref',ref:'suppliers'},{k:'image',l:'實體圖（產品圖片）',t:'file',kind:'image',full:true},activeField],
     defaults:()=>({version:'A'}),
     cols:[['_img','圖片',r=>`<img class="thumb" src="${productImg(r)}" alt="">`],['customerPart','客戶料號',r=>`<b>${esc(r.customerPart)}</b>`],['version','版本'],['name','名稱'],['companyPart','工廠料號'],['description','Description'],['material','材質'],['_d','圖面',r=>db.drawings.filter(d=>d.productId===r.id).length],['_p','目前價格',r=>{const p=priceAt(r.id,today());return p?`${fmt(p.price)} ${p.currency}`:'<span class="muted">—</span>'}],activeCol],
     unique:o=>db.products.some(x=>x.id!==o.id&&norm(x.customerPart)===norm(o.customerPart)&&norm(x.version)===norm(o.version))?'客戶料號＋版本已存在；版本變更請建立新版本產品':null,
@@ -801,7 +805,7 @@ function addLineRow(box,line,ctx){
     <div class="field span2" data-field="supplier"><label>供應商（點選展開，輸入即時篩選）</label><div class="autocomplete"><input data-k="supplier" autocomplete="off" placeholder="點此選擇工廠或貨運供應商"></div><small class="authhint" data-k="supinfo"></small></div>
     <div class="field span2" data-field="product"><label>產品編號（客戶料號）<span class="req">*</span></label><div class="autocomplete"><input data-k="product" autocomplete="off" placeholder="點此選擇產品，或輸入料號 / Description 篩選"></div><small class="authhint" data-k="prodinfo"></small></div>
     <div class="field"><label>版本</label><input data-k="version"></div>
-    <div class="field"><label>工廠產品編號（自動帶入）</label><input data-k="companyPart"></div>
+    <div class="field"><label>本公司 / 工廠產品編號（自動帶入）</label><input data-k="companyPart"></div>
     <div class="field span2"><label>Description（自動帶入）</label><input data-k="description"></div>
     <div class="field span2"><label>圖面（記錄本次使用的圖面）</label><select data-k="drawingId"></select></div>
     <div class="field span2"><label>產品圖片與圖片編號（自動帶入）</label><div class="imgrow"><img data-k="img" class="thumb" alt="產品圖片"><small class="muted" data-k="imgname"></small></div></div>
@@ -1346,7 +1350,7 @@ function inquiryPage(){return head('第三階段：新產品詢價與供應商�
 // ---- 登入（§7.2 登入失敗次數限制；模擬）----
 function renderLogin(){
   const users=db.users.filter(u=>u.active!==false);
-  $('#loginroot').innerHTML=`<div class="loginback"><form class="logincard" id="loginForm" novalidate><div class="lbrand"><b>AFCO | ORDER</b><small>訂單管理系統 · 互動展示原型</small></div>
+  $('#loginroot').innerHTML=`<div class="loginback"><form class="logincard" id="loginForm" novalidate><div class="lbrand"><b>${esc(MOCK.company.name)}</b><small>${esc(MOCK.company.en)} · 訂單管理系統（互動展示原型）</small></div>
   <div class="field" data-field="lg_user"><label for="lg_user">帳號</label><select id="lg_user">${users.map(u=>`<option value="${u.id}">${esc(u.email)}（${esc(u.name)}｜${roles[u.role]}）</option>`).join('')}</select></div>
   <div class="field" data-field="lg_pw"><label for="lg_pw">密碼</label><input id="lg_pw" type="password" autocomplete="current-password" placeholder="展示密碼：${MOCK.demoPassword}"><small class="errmsg" id="lg_err"></small></div>
   <button class="btn primary" style="justify-content:center;padding:11px" id="lg_btn" type="submit">登入</button>
@@ -1377,7 +1381,7 @@ function renderNav(){
   $$('#nav button').forEach(b=>b.onclick=()=>go(b.dataset.page));
 }
 const title=()=>navItems.find(x=>x[0]===ui.page)?.[2]||'總覽儀表板';
-function head(sub,btn=''){return `<div class="pagehead"><div><div class="eyebrow">AFCO / WORKSPACE</div><h1>${title()}</h1><p>${sub}</p></div>${btn}</div>`}
+function head(sub,btn=''){return `<div class="pagehead"><div><div class="eyebrow">${esc(MOCK.company.en)} / WORKSPACE</div><h1>${title()}</h1><p>${sub}</p></div>${btn}</div>`}
 function setFilter(k,v){ui.filter[k]=v;render()}
 function go(p){
   ui.page=p;ui.search='';ui.loadError=false;
@@ -1423,6 +1427,8 @@ $('#simErr').onchange=e=>setSimErr(e.target.checked);
 $('#resetBtn').onclick=resetDemo;
 $('#logoutBtn').onclick=logout;
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){const d=$('#dialogroot').lastElementChild;if(d&&d._close)d._close(null)}});
+$('#brandName').textContent=MOCK.company.short;$('#brandSub').textContent=MOCK.company.en+' · 訂單管理系統';document.title='訂單管理系統｜'+MOCK.company.name;
 initStatuses();
 render();
+if(seedReplaced)toast('展示資料已更新為最新版本','info');
 </script></body></html>
